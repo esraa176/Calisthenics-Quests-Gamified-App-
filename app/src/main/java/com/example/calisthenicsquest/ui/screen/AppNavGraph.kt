@@ -21,7 +21,7 @@ fun AppNavGraph(modifier: Modifier = Modifier, authViewModel: AuthViewModel) {
             SignUpScreen(modifier, navController, authViewModel)
         }
         composable("home"){
-            HomeScreen(modifier)
+            HomeScreen(modifier, navController, authViewModel)
         }
     })
 }
